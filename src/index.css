@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@keyframes heartFly {
+  0% {
+    transform: translateY(0) scale(0.6);
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+    transform: translateY(-20px) scale(1.1) rotate(-10deg);
+  }
+  50% {
+    transform: translateY(-80px) scale(1) rotate(10deg);
+  }
+  100% {
+    transform: translateY(-160px) scale(0.8) rotate(-15deg);
+    opacity: 0;
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleUp {
+  0% {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.animate-slide-up {
+  animation: slideUp 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-scale-up {
+  animation: scaleUp 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@utility heart-bubble {
+  position: absolute;
+  pointer-events: none;
+  animation: heartFly 1s cubic-bezier(0.1, 0.8, 0.3, 1) forwards;
+}
+
+/* Custom gorgeous micro-learning scrollbar hidden logic */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}

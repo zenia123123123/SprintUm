@@ -1,0 +1,6 @@
+{
+  "name": "СпринтУм",
+  "description": "Стильный и современный сайт-заглушка (landing page) мобильного приложения для развития интеллекта «СпринтУм» с ссылками на App Store и Google Play.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
