@@ -290,7 +290,6 @@ export default function App() {
 
               <div className="pt-2 border-t border-teal-950/40">
                 <span className="text-[10px] text-slate-400 block leading-relaxed">
-                  *Уроки созданы победителями школьных олимпиад и хакатонов. Длина одного законченного микроурока на СпринтУм составляет ровно <strong>3.5 минуты</strong>.
                 </span>
               </div>
             </div>
